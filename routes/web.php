@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController; // Import the UserController class
+
+// Display the form
+Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+
+// Handle form submission
+Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
 
 
 /*
