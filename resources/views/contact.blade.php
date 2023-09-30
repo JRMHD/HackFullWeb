@@ -106,7 +106,8 @@
                 <div class="col-md-8 mb-md-5">
                     <h2 class="text-center">If you got any questions <br>please do not hesitate to send us a message
                     </h2>
-                    <form action="#" class="bg-light p-5 contact-form">
+                    <form action="{{ route('contact.send') }}" method="POST" class="bg-light p-5 contact-form">
+                        @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Your Name">
                         </div>

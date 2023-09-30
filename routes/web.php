@@ -9,6 +9,8 @@ Route::get('/user/create', [UserController::class, 'create'])->name('user.create
 // Handle form submission
 Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
 
+// routes/web.php
+Route::post('/contact', 'ContactController@sendEmail')->name('contact.send');
 
 /*
 |--------------------------------------------------------------------------
