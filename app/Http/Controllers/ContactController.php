@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
+use App\Mail\MyTestEmail;
 
 class ContactController extends Controller
 {
@@ -30,10 +31,14 @@ class ContactController extends Controller
             'subject' => $request->input('subject'),
             'message' => $request->input('message'),
         ];
-
-        // Send the email using Laravel Mail
-        Mail::to('reaganmukabana@gmail.com')->send(new ContactFormMail($data));
-
+        // $name=$request->name;
+        // Send the email using Laravel Mailre
+        // Mail::to('reaganmukabana@gmail.com')->send(new MyTestEmail($data));
+        Mail::to('recipient@example.com')->send(new MyTestEmail($data));
+        // $data = ['Item 1', 'Item 2', 'Item 3'];
+        // $recipientEmail = 'recipient@example.com';
+    
+        // Mail::to($recipientEmail)->send(new MyTestEmail($request));
         // Redirect back with a success message
         return back()->with('success', 'Your message has been sent successfully.');
     }

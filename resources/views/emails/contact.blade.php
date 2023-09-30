@@ -1,5 +1,6 @@
 <!-- resources/views/emails/contact.blade.php -->
-<p>Name: {{ $data['name'] }}</p>
-<p>Email: {{ $data['email'] }}</p>
-<p>Subject: {{ $data['subject'] }}</p>
-<p>Message: {{ $data['message'] }}</p>
+<p>Name: {{ $request['name'] }}</p><br>
+<p>Email: {{ $request['email'] }}</p><br>
+<p>Subject: {{ $request['subject'] }}</p><br>
+<p>Message: {{ $request['message'] }}</p><br>
+{{-- <p>lorem try vyuguuu</p> --}}

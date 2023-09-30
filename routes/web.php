@@ -1,7 +1,20 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController; // Import the UserController class
+
+
+use App\Mail\MyTestEmail;
+use Illuminate\Support\Facades\Mail;
+
+Route::get('/testroute', function () {
+    $name = "Funny Coder";
+    // $data="";
+
+    // The email sending is done using the to method on the Mail facade
+    Mail::to('testreceiver@gmail.com')->send(new MyTestEmail($name));
+});
 
 // Display the form
 Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
@@ -11,6 +24,7 @@ Route::post('/user/store', [UserController::class, 'store'])->name('user.store')
 
 // routes/web.php
 Route::post('/contact', 'ContactController@sendEmail')->name('contact.send');
+Route::post('/contact1', [ContactController::class, 'sendEmail'])->name('contact.send1');
 
 /*
 |--------------------------------------------------------------------------
