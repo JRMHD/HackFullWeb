@@ -9,7 +9,7 @@ use App\Mail\MyTestEmail;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/testroute', function () {
-    $name = "Funny Coder";
+    $name[] = "Funny Coder";
     // $data="";
 
     // The email sending is done using the to method on the Mail facade
