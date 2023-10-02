@@ -96,9 +96,10 @@
                             <div class="icon">
                                 <span class="icon-envelope-o"></span>
                             </div>
-                            <p><span>Email:</span> <a href="cgreen@hacksolutionusa.com">cgreen@hacksolutionusa.com</a>
-                            </p>
+                            <p><span>Click To Email:</span> <a
+                                    href="mailto:cgreen@hacksolutionusa.com">cgreen@hacksolutionusa.com</a></p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -127,30 +128,30 @@
                     </form>
                     <div id="success-message" class="alert alert-success mt-3" style="display: none;">Message sent
                         Successfully</div>
-                         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script>
-                $(document).ready(function() {
-                    $('#contact-form').submit(function(e) {
-                        e.preventDefault(); // Prevent the default form submission
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    {{-- <script>
+                        $(document).ready(function() {
+                            $('#contact-form').submit(function(e) {
+                                e.preventDefault(); // Prevent the default form submission
 
-                        // Perform an AJAX (or fetch) request to submit the form data
-                        $.ajax({
-                            url: $(this).attr('action'),
-                            type: $(this).attr('method'),
-                            data: $(this).serialize(),
-                            success: function(response) {
-                                // If the submission is successful, display the success message
-                                $('#success-message').fadeIn(); // Show the success message
-                                $('#contact-form')[0].reset(); // Reset the form
-                            },
-                            error: function() {
-                                // Handle errors here if needed
-                                // You can display an error message in a similar way as the success message
-                            }
+                                // Perform an AJAX (or fetch) request to submit the form data
+                                $.ajax({
+                                    url: $(this).attr('action'),
+                                    type: $(this).attr('method'),
+                                    data: $(this).serialize(),
+                                    success: function(response) {
+                                        // If the submission is successful, display the success message
+                                        $('#success-message').fadeIn(); // Show the success message
+                                        $('#contact-form')[0].reset(); // Reset the form
+                                    },
+                                    error: function() {
+                                        // Handle errors here if needed
+                                        // You can display an error message in a similar way as the success message
+                                    }
+                                });
+                            });
                         });
-                    });
-                });
-            </script>
+                    </script> --}}
 
 
                 </div>

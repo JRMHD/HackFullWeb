@@ -304,7 +304,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="#">Box Truck 26ft</a></h2>
                             <span></span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -325,7 +325,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="#">Box Truck 24ft</a></h2>
                             <span></span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -346,7 +346,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="#">Box Truck 20ft</a></h2>
                             <span> </span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -367,7 +367,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="#">Box Truck 16ft</a></h2>
                             <span></span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -389,7 +389,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="#">Box Truck 14ft</a></h2>
                             <span></span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -410,7 +410,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="#">Sedans</a></h2>
                             <span>TOYOTA</span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -431,7 +431,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="">SUVs</a></h2>
                             <span>TOYOTA</span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -452,7 +452,7 @@
                         <div class="text p-4 text-center">
                             <h2 class="mb-0"><a href="">Lexus Sedans</a></h2>
                             <span>TOYOTA</span>
-                            <p class="d-flex mb-0 d-block"><a href="{{ url('/contact') }}"
+                            <p class="d-flex mb-0 d-block"><a href="tel:+18007749450"
                                     class="btn btn-black btn-outline-black mr-1">Book now</a> <a
                                     href="{{ url('/contact') }}"
                                     class="btn btn-black btn-outline-black ml-1">Details</a></p>
@@ -737,7 +737,7 @@
     </section>		 -->
 
 
-
+    @include('footer')
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
