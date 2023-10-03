@@ -37,9 +37,9 @@ class MyTestEmail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('jeffrey@example.com', 'Jeffrey Way'),
+            from: new Address('cgreen@hacksolutionusa.com', 'HACK SOLUTIONS'),
             replyTo: [
-                new Address('taylor@example.com', 'Taylor Otwell'),
+                new Address('cgreen@hacksolutionusa.com', 'Charles Green'),
             ],
             subject: 'Welcome Mail',
             using: [
